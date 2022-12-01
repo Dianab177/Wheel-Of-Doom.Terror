@@ -4,66 +4,114 @@ const spinBtn = document.getElementById("spin_btn");
 const text = document.getElementById("text");
 /* --------------- Minimum And Maximum Angle For A value  --------------------- */
 const spinValues = [
-  { minDegree: 61, maxDegree: 90, value: `<ul>
-                                            <li>por eutanasia por parte de tus compañeras, que te veía sufrir demasiado programando</li>
-                                            <li><h3>Natalia</h3></li>
-                                            <li><img src="/avatar/natalia.png"/></li>
-                                          </ul> `},
-  { minDegree: 31, maxDegree: 60, value: `<ul>
-                                            <li>Tania te ha quitado la carne de la dieta y no te llegan nutrientes al cerebro</li>
-                                            <li><h3>Georgette</h3></li>
-                                            <li><img src="/avatar/georgette.png"/></li>
-                                           </ul> `},
-  { minDegree: 0, maxDegree: 30, value: `<ul>
-                                            <li>por latigazo de Manu</li>
-                                            <li><h3>Ana G</h3></li>
-                                            <li><img src="/avatar/anag.png"/></li>
-                                          </ul>`},
-  { minDegree: 331, maxDegree: 360, value:  `<ul>
-                                                <li>del susto por un borrado sorpresivo en github</li>
-                                                <li><h3>Adria</h3></li>
-                                                <li><img src="/avatar/adria.png"/></li>
-                                              </ul>`},
-  { minDegree: 301, maxDegree: 330, value:  `<ul>
-                                                <li>sobredosis de información durante una píldora</li>
-                                                <li><h3>Ana V</h3></li>
-                                                <li><img src="/avatar/anav.png"/></li>
-                                              </ul>`},
-  { minDegree: 271, maxDegree: 300, value:  `<ul>
-                                                <li>envenenamiento por mirada de Gabi teacher</li>
-                                                <li><h3>Arancha</h3></li>
-                                                <li><img src="/avatar/arancha.png"/></li>
-                                              </ul>`},
-  { minDegree: 241, maxDegree: 270, value:  `<ul>
-                                                <li>desnucamiento durante una pausa activa</li>
-                                                <li><h3>Gabriela</h3></li>
-                                                <li><img src= "/avatar/gabriela.png"/></li>
-                                              </ul>`},
-  { minDegree: 211, maxDegree: 240, value: `<ul>
-                                                <li>por ataque de ira homicida ante problema sin solución</li>
-                                                <li><h3>Irene</h3></li>
-                                                <li><img src= "/avatar/irene.png"/></li>
-                                              </ul>`},
-  { minDegree: 181, maxDegree: 210, value:`<ul>
-                                              <li>electrocución intentando arreglar el ordenador Nuevo</li>
-                                              <li><h3>Iris</h3></li>
-                                              <li><img src="/avatar/iris.png"/></li>
-                                            </ul>`},
-  { minDegree: 151, maxDegree: 180, value:`<ul>
-                                              <li>atragantada por comer rápido durante la pausa</li>
-                                              <li><h3>Jéssica</h3></li>
-                                              <li><img src="/avatar/jessica.png"/></li>
-                                            </ul>`},
-  { minDegree: 121, maxDegree: 150, value: `<ul>
-                                              <li>ataque al corazón por probar algo en código y que funcione al fin</li>
-                                              <li><h3>Mariela</h3></li>
-                                              <li><img src="/avatar/mariela.png"/></li>
-                                            </ul>`},
-  { minDegree: 91, maxDegree: 120, value:  `<ul>
-                                              <li>muerte por golpes contra el teclado</li>
-                                              <li><h3>Tania</h3></li>
-                                              <li><img src="/avatar/tania.png"/></li>
-                                            </ul>`},
+  {
+    minDegree: 61,
+    maxDegree: 90,
+    value: `<ul>
+              <li>por eutanasia por parte de tus compañeras, que te veía sufrir demasiado programando</li>
+              <li><h3>Natalia</h3></li>
+              <li><img src="/avatares/natalia.png"/></li>
+            </ul> `,
+  },
+  {
+    minDegree: 31,
+    maxDegree: 60,
+    value: `<ul>
+              <li>Tania te ha quitado la carne de la dieta y no te llegan nutrientes al cerebro</li>
+              <li><h3>Georgette</h3></li>
+              <li><img src="/avatares/georgette.png"/></li>
+              </ul> `,
+  },
+  {
+    minDegree: 0,
+    maxDegree: 30,
+    value: `<ul>
+              <li>por latigazo de Manu</li>
+              <li><h3>Ana G</h3></li>
+              <li><img src="/avatares/anag.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 331,
+    maxDegree: 360,
+    value: `<ul>
+              <li>del susto por un borrado sorpresivo en github</li>
+              <li><h3>Adria</h3></li>
+              <li><img src="/avatares/adria.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 301,
+    maxDegree: 330,
+    value: `<ul>
+              <li>sobredosis de información durante una píldora</li>
+              <li><h3>Ana V</h3></li>
+              <li><img src="/avatares/anav.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 271,
+    maxDegree: 300,
+    value: `<ul>
+              <li>envenenamiento por mirada de Gabi teacher</li>
+              <li><h3>Arancha</h3></li>
+              <li><img src="/avatares/arancha.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 241,
+    maxDegree: 270,
+    value: `<ul>
+              <li>desnucamiento durante una pausa activa</li>
+              <li><h3>Gabriela</h3></li>
+              <li><img src= "/avatares/gabriela.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 211,
+    maxDegree: 240,
+    value: `<ul>
+              <li>por ataque de ira homicida ante problema sin solución</li>
+              <li><h3>Irene</h3></li>
+              <li><img src= "/avatares/irene.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 181,
+    maxDegree: 210,
+    value: `<ul>
+              <li>electrocución intentando arreglar el ordenador Nuevo</li>
+              <li><h3>Iris</h3></li>
+              <li><img src="/avatares/iris.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 151,
+    maxDegree: 180,
+    value: `<ul>
+              <li>atragantada por comer rápido durante la pausa</li>
+              <li><h3>Jéssica</h3></li>
+              <li><img src="/avatares/jessica.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 121,
+    maxDegree: 150,
+    value: `<ul>
+              <li>ataque al corazón por probar algo en código y que funcione al fin</li>
+              <li><h3>Mariela</h3></li>
+              <li><img src="/avatares/mariela.png"/></li>
+            </ul>`,
+  },
+  {
+    minDegree: 91,
+    maxDegree: 120,
+    value: `<ul>
+              <li>muerte por golpes contra el teclado</li>
+              <li><h3>Tania</h3></li>
+              <li><img src="/avatares/tania.png"/></li>
+            </ul>`,
+  },
 ];
 /* --------------- Size Of Each Piece  --------------------- */
 const size = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
@@ -80,7 +128,7 @@ let spinColors = [
   "#38251C",
   "#050600",
   "#6e292d",
-  "#050600"
+  "#050600",
 ];
 /* --------------- Chart --------------------- */
 /* --------------- Guide : https://chartjs-plugin-datalabels.netlify.app/guide/getting-started.html --------------------- */
@@ -88,10 +136,10 @@ let spinChart = new Chart(spinWheel, {
   plugins: [ChartDataLabels],
   type: "pie",
   data: {
-    labels: [1,2,3,4,5,6,7,8,9,10,11,12],
+    labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     datasets: [
       {
-        backgroundColor:spinColors,
+        backgroundColor: spinColors,
         data: size,
       },
     ],

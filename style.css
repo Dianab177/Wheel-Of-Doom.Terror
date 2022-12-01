@@ -10,7 +10,7 @@
   /* Colors */
   --main-branding-1color: #0e0004;
   --main-branding-2color: #481117;
-  --main-branding-3color: #9f0416;
+  --main-branding-3color: #bd0218;
   --main-branding-4color: #2e282b;
   --white_color: rgb(255, 255, 255);
   --body_background: linear-gradient(to right, #7f8080, #fbe2e2);
@@ -30,14 +30,14 @@ body {
 h1 {
   font-family: var(--main-font-Title);
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 2rem;
   top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--main-branding-3color);
 }
-h3{
-  font-family: var( --main-font-subTitle);
+h3 {
+  font-family: var(--main-font-subTitle);
   font-size: 1.5rem;
 }
 ul {
@@ -47,13 +47,13 @@ li {
   margin-top: 5px;
 }
 img {
-  width: 55px;
+  width: 130px;
   border-radius: 50%;
 }
 .container {
   width: 70%;
   max-width: 34.37rem;
-  margin-top: 3rem;
+  margin-top: 20vh;
   max-height: 70vh;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -85,23 +85,22 @@ img {
   background: var(--spin_background);
   color: var(--white_color);
   text-transform: uppercase;
-  font-family: var( --main-font-subTitle);
-  font-size: 0.8rem;
+  font-family: var(--main-font-subTitle);
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
- 
 }
 .fa-solid {
   position: absolute;
   top: 30%;
   left: 90%;
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--main-branding-3color);
   transform: rotate(-140deg);
 }
 #text {
-  font-size: 0.6rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   color: var(--main-branding-2color);
   font-weight: 500;
 }
